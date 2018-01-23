@@ -1,17 +1,18 @@
-# Welcome to MkDocs
+# Welcome to UW Sailbopt Documentation
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+## Navigation
 
-## Commands
+To navigate our documentation, simply scroll through the various sections in the window on the left of the screen and select the page you wish to view.
+To search for a block of text, simply type the string into the search bar to the left.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+## Sub-Teams
 
-## Project layout
+We have 3 sub-teams that compose our team:
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+1. Mechanical
+
+2. Controls-Navigation
+
+3. Controls-Vision
+
+4. Business

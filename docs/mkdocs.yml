@@ -1,5 +1,7 @@
 site_name: UW Sailbot Home
 pages:
+  - Home:
+    - 'Our Documentation': 'index.md'
   - About: 
     - 'The Competition': 'about.md'
     - 'Our Goals': 'goals.md'
