@@ -1,0 +1,21 @@
+site_name: UW Sailbot Home
+pages:
+  - About: 
+    - 'The Competition': 'about.md'
+    - 'Our Goals': 'goals.md'
+    - 'The Team': 'team.md'
+  - Mechanical: 
+    - 'Mechanical': 'mechanical.md'
+  - Controls-Electrical: 
+    - 'Electrical': 'electrical.md'
+  - Controls-Navigation: 
+    - 'Navigation': 'navigation.md'
+  - Controls-Vision: 
+    - 'What is Vision': 'vision_intro.md'
+    - 'Approaches': 'vision_approaches.md'
+    - 'Tensorflow': 'vision_tensorflow.md'
+    - 'Hardware': 'vision_hardware.md'
+    - 'Controls Integration': 'vision_integration.md'
+  - Adding Documentation:
+    - 'MkDocs Tutorial': 'mkdocs_tutorial.md'
+theme: readthedocs
