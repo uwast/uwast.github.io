@@ -127,6 +127,19 @@
     <a class="current" href="./">Tensorflow</a>
     <ul class="subnav">
             
+    <li class="toctree-l3"><a href="#buoy-detection-for-navigation-tensorflow-approach">Buoy detection for navigation: Tensorflow approach</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#about-the-classifier">About the classifier</a></li>
+        
+            <li><a class="toctree-l4" href="#getting-started">Getting Started</a></li>
+        
+            <li><a class="toctree-l4" href="#running-the-current-classifier">Running the current classifier</a></li>
+        
+        </ul>
+    
+
     </ul>
                 </li>
                 <li class="">
@@ -187,7 +200,22 @@
           <div role="main">
             <div class="section">
               
-                
+                <h1 id="buoy-detection-for-navigation-tensorflow-approach">Buoy detection for navigation: Tensorflow approach</h1>
+<h2 id="about-the-classifier">About the classifier</h2>
+<p>Currently, we've implemented the <a href="https://research.googleblog.com/2016/03/train-your-own-image-classifier-with.html">Inception-v3 model</a> and retrained the top layer with our own classifiers (buoy, water, sailboats), which returns what the image is most likely to be. With enough data, the classifier should become very accurate and reliable.</p>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="pre-installation">Pre-Installation</h3>
+<p>Preferable to run on linux. Contact Irene Chen for a bootable USB to install Ubuntu 17.04.</p>
+<h3 id="installation-of-tensorflow">Installation of Tensorflow</h3>
+<p>There's a good official installation guide <a href="https://www.tensorflow.org/install/">here</a>.
+Things to note: preferable to set up a virtual environment (virtualenv) to avoid conflicts with python versions.</p>
+<p>Starting your virtualenv: 
+    source ~/path/to/your/tensorflow/workspace/bin/activate</p>
+<p>Common issues: if you've installed python in your virtualenv as well, you could skip this step. If there are conflicts with the python version, manually set up the path.
+    export PYTHONPATH=$PYTHONPATH:/path/to/image/classifier/project/lib</p>
+<h2 id="running-the-current-classifier">Running the current classifier</h2>
+<p>Get the entire classifier <a href="https://drive.google.com/open?id=11JaHUT94rfeuIKgQn0hfLwjg1EihvNZT">here</a> (including the Tensorflow Inception model itself). Can be improved by adding more data in the training_dataset folder.</p>
+<h3 id="good-reads">Good Reads</h3>
               
             </div>
           </div>

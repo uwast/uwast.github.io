@@ -67,8 +67,18 @@
         },
         {
             "location": "/vision_intro/",
+            "text": "What is Vision\n\n\nPectine moraque corripiens fallite faciat\n\n\nLorem markdownum\n est sed duabuset sororis flumina edocuit patulis consiliis\nprimordia rabiemque: paterer questaque, Actoridaeque. Munus qua succumbere ridet\ndonec arcus, vertitur genus, in convulso pharetraque adulterium esse. Retinacula\ntamen \nin\n introitu totoque: ulla\nreceperunt verba comes posset: atris subit, Atalanta. Populisque satiata imago\nper et movet, nunc quamvis \nflorem\n nominat: et nihil finemque. Hic sit quae,\nalma sospite inque.\n\n\nvar scareware_dma = pop_external_joystick(query_grep(vfat, clipboardEditor,\n        50), 57);\nzip = python_meme_lion / mnemonic / net * fifo + telecommunications;\ncamelcase_media(interlaced);\n\n\n\nSed si sequuntur meliore armento amaverat. Contingere tangere quam voluistis,\npars probas premebat; consulat ad locum!",
+            "title": "What is Vision"
+        },
+        {
+            "location": "/vision_intro/#what-is-vision",
             "text": "",
             "title": "What is Vision"
+        },
+        {
+            "location": "/vision_intro/#pectine-moraque-corripiens-fallite-faciat",
+            "text": "Lorem markdownum  est sed duabuset sororis flumina edocuit patulis consiliis\nprimordia rabiemque: paterer questaque, Actoridaeque. Munus qua succumbere ridet\ndonec arcus, vertitur genus, in convulso pharetraque adulterium esse. Retinacula\ntamen  in  introitu totoque: ulla\nreceperunt verba comes posset: atris subit, Atalanta. Populisque satiata imago\nper et movet, nunc quamvis  florem  nominat: et nihil finemque. Hic sit quae,\nalma sospite inque.  var scareware_dma = pop_external_joystick(query_grep(vfat, clipboardEditor,\n        50), 57);\nzip = python_meme_lion / mnemonic / net * fifo + telecommunications;\ncamelcase_media(interlaced);  Sed si sequuntur meliore armento amaverat. Contingere tangere quam voluistis,\npars probas premebat; consulat ad locum!",
+            "title": "Pectine moraque corripiens fallite faciat"
         },
         {
             "location": "/vision_approaches/",
@@ -77,8 +87,43 @@
         },
         {
             "location": "/vision_tensorflow/",
-            "text": "",
+            "text": "Buoy detection for navigation: Tensorflow approach\n\n\nAbout the classifier\n\n\nCurrently, we've implemented the \nInception-v3 model\n and retrained the top layer with our own classifiers (buoy, water, sailboats), which returns what the image is most likely to be. With enough data, the classifier should become very accurate and reliable.\n\n\nGetting Started\n\n\nPre-Installation\n\n\nPreferable to run on linux. Contact Irene Chen for a bootable USB to install Ubuntu 17.04.\n\n\nInstallation of Tensorflow\n\n\nThere's a good official installation guide \nhere\n.\nThings to note: preferable to set up a virtual environment (virtualenv) to avoid conflicts with python versions.\n\n\nStarting your virtualenv: \n    source ~/path/to/your/tensorflow/workspace/bin/activate\n\n\nCommon issues: if you've installed python in your virtualenv as well, you could skip this step. If there are conflicts with the python version, manually set up the path.\n    export PYTHONPATH=$PYTHONPATH:/path/to/image/classifier/project/lib\n\n\nRunning the current classifier\n\n\nGet the entire classifier \nhere\n (including the Tensorflow Inception model itself). Can be improved by adding more data in the training_dataset folder.\n\n\nGood Reads",
             "title": "Tensorflow"
+        },
+        {
+            "location": "/vision_tensorflow/#buoy-detection-for-navigation-tensorflow-approach",
+            "text": "",
+            "title": "Buoy detection for navigation: Tensorflow approach"
+        },
+        {
+            "location": "/vision_tensorflow/#about-the-classifier",
+            "text": "Currently, we've implemented the  Inception-v3 model  and retrained the top layer with our own classifiers (buoy, water, sailboats), which returns what the image is most likely to be. With enough data, the classifier should become very accurate and reliable.",
+            "title": "About the classifier"
+        },
+        {
+            "location": "/vision_tensorflow/#getting-started",
+            "text": "",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/vision_tensorflow/#pre-installation",
+            "text": "Preferable to run on linux. Contact Irene Chen for a bootable USB to install Ubuntu 17.04.",
+            "title": "Pre-Installation"
+        },
+        {
+            "location": "/vision_tensorflow/#installation-of-tensorflow",
+            "text": "There's a good official installation guide  here .\nThings to note: preferable to set up a virtual environment (virtualenv) to avoid conflicts with python versions.  Starting your virtualenv: \n    source ~/path/to/your/tensorflow/workspace/bin/activate  Common issues: if you've installed python in your virtualenv as well, you could skip this step. If there are conflicts with the python version, manually set up the path.\n    export PYTHONPATH=$PYTHONPATH:/path/to/image/classifier/project/lib",
+            "title": "Installation of Tensorflow"
+        },
+        {
+            "location": "/vision_tensorflow/#running-the-current-classifier",
+            "text": "Get the entire classifier  here  (including the Tensorflow Inception model itself). Can be improved by adding more data in the training_dataset folder.",
+            "title": "Running the current classifier"
+        },
+        {
+            "location": "/vision_tensorflow/#good-reads",
+            "text": "",
+            "title": "Good Reads"
         },
         {
             "location": "/vision_hardware/",
