@@ -12,10 +12,12 @@ There's a good official installation guide [here](https://www.tensorflow.org/ins
 Things to note: preferable to set up a virtual environment (virtualenv) to avoid conflicts with python versions.
 
 Starting your virtualenv: 
-    source ~/path/to/your/tensorflow/workspace/bin/activate
+
+	source ~/path/to/your/tensorflow/workspace/bin/activate
 
 Common issues: if you've installed python in your virtualenv as well, you could skip this step. If there are conflicts with the python version, manually set up the path.
-    export PYTHONPATH=$PYTHONPATH:/path/to/image/classifier/project/lib
+
+	export PYTHONPATH=$PYTHONPATH:/path/to/image/classifier/project/lib
 
 
 ## Running the current classifier

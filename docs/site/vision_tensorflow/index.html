@@ -209,10 +209,12 @@
 <h3 id="installation-of-tensorflow">Installation of Tensorflow</h3>
 <p>There's a good official installation guide <a href="https://www.tensorflow.org/install/">here</a>.
 Things to note: preferable to set up a virtual environment (virtualenv) to avoid conflicts with python versions.</p>
-<p>Starting your virtualenv: 
-    source ~/path/to/your/tensorflow/workspace/bin/activate</p>
-<p>Common issues: if you've installed python in your virtualenv as well, you could skip this step. If there are conflicts with the python version, manually set up the path.
-    export PYTHONPATH=$PYTHONPATH:/path/to/image/classifier/project/lib</p>
+<p>Starting your virtualenv: </p>
+<pre><code>source ~/path/to/your/tensorflow/workspace/bin/activate
+</code></pre>
+<p>Common issues: if you've installed python in your virtualenv as well, you could skip this step. If there are conflicts with the python version, manually set up the path.</p>
+<pre><code>export PYTHONPATH=$PYTHONPATH:/path/to/image/classifier/project/lib
+</code></pre>
 <h2 id="running-the-current-classifier">Running the current classifier</h2>
 <p>Get the entire classifier <a href="https://drive.google.com/open?id=11JaHUT94rfeuIKgQn0hfLwjg1EihvNZT">here</a> (including the Tensorflow Inception model itself). Can be improved by adding more data in the training_dataset folder.</p>
 <h3 id="good-reads">Good Reads</h3>
