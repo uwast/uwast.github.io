@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Our Goals - UW Sailbot Home</title>
+  <title>ROS Installation - UW Sailbot Home</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Our Goals";
-    var mkdocs_page_input_path = "goals.md";
-    var mkdocs_page_url = "/goals/";
+    var mkdocs_page_name = "ROS Installation";
+    var mkdocs_page_input_path = "installation.md";
+    var mkdocs_page_url = "/installation/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -66,12 +66,9 @@
                     
     <a class="" href="../about/">The Competition</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Our Goals</a>
-    <ul class="subnav">
-            
-    </ul>
+    <a class="" href="../goals/">Our Goals</a>
                 </li>
                 <li class="">
                     
@@ -110,9 +107,25 @@
                     
     <a class="" href="../navigation/">Intro to Navigation</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../installation/">ROS Installation</a>
+    <a class="current" href="./">ROS Installation</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#installing-ros">Installing ROS</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#installing-our-packages">Installing our packages</a></li>
+        
+            <li><a class="toctree-l4" href="#dependancies">Dependancies</a></li>
+        
+            <li><a class="toctree-l4" href="#finishing">Finishing</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
@@ -185,11 +198,11 @@
     
       
         
-          <li>About &raquo;</li>
+          <li>Controls-Navigation &raquo;</li>
         
       
     
-    <li>Our Goals</li>
+    <li>ROS Installation</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -199,7 +212,27 @@
           <div role="main">
             <div class="section">
               
-                
+                <h1 id="installing-ros">Installing ROS</h1>
+<p>Installing ROS is rather straight forward, however it must be noted that you have to have Ubuntu 16.04.3 installed on your computer, whether it be a partition or a virtual machine.  We use the ROS Kinetic distribution.  For a detailed guide on install ROS please go <a href="http://wiki.ros.org/kinetic/Installation/Ubuntu">here</a>.</p>
+<p>Installing the barebones or desktop version should suffice although you may need to install extra dependancies later.  If you are working on simulators or GUIs at all, get the desktop full installation.</p>
+<h2 id="installing-our-packages">Installing our packages</h2>
+<p>To install the boat's software, you must first create a catkin workspace, by following this <a href="http://wiki.ros.org/catkin/Tutorials/create_a_workspace">tutorial</a>. Delete you src folder and clone the boat's package as the src folder with the following command:</p>
+<pre><code>$ git clone https://github.com/uwsailbot/boat_2018.git src
+</code></pre>
+<h2 id="dependancies">Dependancies</h2>
+<p>This package relies on phidgets_imu and imu_filter_madgwick in order to compile.  Clone it from <a href="https://github.com/ros-drivers/phidgets_drivers">phidgets</a> and <a href="https://github.com/ccny-ros-pkg/imu_tools">imu_tools</a> (into your catkin_ws/src folder) or download both using the following command (if the following command doesn't work, just download the above git repos):</p>
+<pre><code>$ rosdep install boat_nav
+</code></pre>
+<p>Either way make sure to read the README.md in their repo and follow some extra steps.</p>
+<p>You must download the python phidgets API <a href="https://www.phidgets.com/docs/Language_-_Python#Install_Phidget_Python_module_for_Linux">See here</a></p>
+<p>Run this in the libphidget folder to build it:</p>
+<pre><code>$ ./configure --prefix=/usr &amp;&amp; make &amp;&amp; sudo make install
+</code></pre>
+<p>Also be sure to download the phidgets compass calibration program <a href="https://www.phidgets.com/?tier=3&amp;catid=10&amp;pcid=8&amp;prodid=32">See here</a></p>
+<h2 id="finishing">Finishing</h2>
+<p>You should then be able to build your catkin workspace with the command:</p>
+<pre><code>$ catkin_make
+</code></pre>
               
             </div>
           </div>
@@ -207,10 +240,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../team/" class="btn btn-neutral float-right" title="The Team">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../overview/" class="btn btn-neutral float-right" title="System Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../about/" class="btn btn-neutral" title="The Competition"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../navigation/" class="btn btn-neutral" title="Intro to Navigation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -236,10 +269,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../about/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../navigation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../team/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../overview/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

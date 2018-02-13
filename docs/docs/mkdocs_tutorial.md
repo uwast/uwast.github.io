@@ -15,13 +15,13 @@ Once you have installed MkDocs you can begin to create documentation files!
 
 Our MkDoc base files are stored inside of the Sailbot website repository in the "MkDocs" folder, 
 download this folder to your local system. Documentation pages are written in mark-up and stored in a .md format, 
-you'll find them in the "MkDocs\Docs" folder. an easy way to start writing in mark-up is to look at the 
-"barebones_doc.md" file stored in the "MkDocs" folder on the Sailbot website repository; 
+you'll find them in the "docs/docs" folder. an easy way to start writing in mark-up is to look at the 
+"barebones_doc.md" file stored in the "docs" folder on the Sailbot website repository; 
 this will give you a foundation to build any sort of static page you want.
 
 If you wish to change the file hierarchy of the project, 
-you must edit the .yml configuration file located in the "MkDocs" folder, 
-further information can be found at the MkDocs [website](http://domospetitus.org/pronumque-solacia).
+you must edit the .yml configuration file located in the "docs" folder, 
+further information can be found at the MkDocs [website](http://mkdocs.org/#installing-mkdocs).
 
 The easiest way to edit documents is to create a local server that hosts your MkDocs folder.
 To do this on windows, open the command terminal, navigate to your "MkDocs" folder location and type:
