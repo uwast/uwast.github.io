@@ -11,7 +11,10 @@ pages:
   - Controls-Electrical: 
     - 'Electrical': 'electrical.md'
   - Controls-Navigation: 
-    - 'Navigation': 'navigation.md'
+    - 'Intro to Navigation': 'navigation.md'
+    - 'ROS Installation': 'installation.md'
+    - 'System Overview': 'overview.md'
+    - 'Software Overview': 'software.md'
   - Controls-Vision: 
     - 'What is Vision': 'vision_intro.md'
     - 'Approaches': 'vision_approaches.md'
