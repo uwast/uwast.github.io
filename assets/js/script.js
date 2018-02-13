@@ -43,7 +43,7 @@ $(document).ready(function() {
  	// Slider
 
  	$('#workstation-slider').owlCarousel({
-	    loop:true,
+	    loop:false,
 	    margin:30,
 	    responsive:{
 	        0:{
