@@ -417,6 +417,10 @@ section{
 	font-size: 21px;
 	margin-bottom: 40px;
 }
+
+.ubutia-card-header img {
+	margin: 0 auto;
+}
 .watch{
 	background-image: url(../images/7.jpg);
 	font-style: italic;
